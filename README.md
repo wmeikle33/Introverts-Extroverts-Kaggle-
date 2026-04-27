@@ -1,4 +1,25 @@
+## Quickstart
 
+```bash
+
+git clone https://github.com/wmeikle33/Introverts-Extroverts.git
+cd Introverts-Extroverts
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[data]"
+python scripts/download_data.py
+
+## Training different models
+
+pip install -e .
+python scripts/train.py
+
+## Predict
+python scripts/predict.py --model models/model.joblib --input data/raw/test.gz --output predictions.csv
+
+python scripts/submission.py
+
+```
 ```bash
 
 Introverts-Extroverts/
