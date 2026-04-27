@@ -20,6 +20,9 @@ python scripts/predict.py --model models/model.joblib --input data/raw/test.gz -
 python scripts/submission.py
 
 ```
+
+## Repo Structure
+
 ```bash
 
 Introverts-Extroverts/
