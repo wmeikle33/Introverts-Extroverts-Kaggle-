@@ -5,7 +5,7 @@ import sys
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 
-DATASET = "avazu-ctr-prediction"
+DATASET = "introverts-extroverts"
 
 data_dir = Path("data")
 
@@ -23,7 +23,7 @@ def download_from_kaggle(data_dir: Path):
     print(f"Downloading Avazu competition files into: {data_dir}")
 
     api.competition_download_files(
-        competition="avazu-ctr-prediction",
+        competition="introverts-extroverts",
         path=str(data_dir),
         quiet=False,
         force=False,
